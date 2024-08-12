@@ -28,7 +28,7 @@ const GeoChart = (result: any) => {
   const [option, setOption] = useState({});
 
   useEffect(() => {
-    console.log(result.data);
+    // console.log(result.data);
     echarts.registerMap("Victoria", result.data);
     const geoChartOptions = {
       title: {

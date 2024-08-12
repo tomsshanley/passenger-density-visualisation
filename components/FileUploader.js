@@ -34,10 +34,10 @@ const FileUploader = () => {
     let destinations = data.map((row) => row.Destination);
     let time = data.map((row) => row.Departure);
     let trips = data.map((row) => row.trips);
-
+    console.log(trips);
     // get unique lgas
     let unique_lgas = [...new Set(origins.concat(destinations))];
-
+    console.log(unique_lgas);
     // create empty '24hours' rows x 'In&Out' columns array for each lga
     let lga_dict = {};
     unique_lgas.forEach((lga) => {
@@ -59,7 +59,7 @@ const FileUploader = () => {
       lga_dict[origin][hour][1] -= passengerCount; // Increment 'out' count by passenger count (going negative)
       lga_dict[destination][hour][0] += passengerCount; // Increment 'in' count by passenger count
     }
-
+    console.log(lga_dict);
     return lga_dict; // Return dictionary of lga trip flow
   }
 

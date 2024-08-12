@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passenger Flow Diagram</title>
+  <style>
+    #flowmap {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+    <h1>Upload CSV File</h1>
+    <input type="file" id="fileInput" accept=".csv" />
+    <h3>Select LGA:</h3>
+    <select id="lgaDropdown"></select>
+    <div id="flowmap"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>

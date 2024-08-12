@@ -65,7 +65,7 @@ export const getServerSideProps = async () => {
     );
     const vicResultData = await vicResult.json();
     const updatedGeojsonData = transformGeojsonData(vicResultData);
-    console.log("VicResult", updatedGeojsonData);
+    // console.log("VicResult", updatedGeojsonData);
 
     return {
       props: { vicJSONresult: updatedGeojsonData },

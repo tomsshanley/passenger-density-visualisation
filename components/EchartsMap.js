@@ -145,7 +145,7 @@ const EChartsMap = (data) => {
 
       try {
         const mongodbResponse = await fetch("/api/pingMongodb");
-        console.log(mongodbResponse);
+        // console.log(mongodbResponse);
 
         echarts.registerMap("USA", mongodbResponse, {
           Alaska: {
