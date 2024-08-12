@@ -24,34 +24,19 @@ echarts.use([
   CanvasRenderer,
 ]);
 
-const GeoChart = (usaJson) => {
+const GeoChart = (result: any) => {
   const [option, setOption] = useState({});
 
   useEffect(() => {
-    console.log(usaJson.data);
-
-    echarts.registerMap("USA", usaJson.data, {
-      Alaska: {
-        left: -131,
-        top: 25,
-        width: 15,
-      },
-      Hawaii: {
-        left: -110,
-        top: 28,
-        width: 5,
-      },
-      "Puerto Rico": {
-        left: -76,
-        top: 26,
-        width: 2,
-      },
-    });
+    console.log(result.data);
+    echarts.registerMap("Victoria", result.data);
     const geoChartOptions = {
       title: {
-        text: "USA Population Estimates (2012)",
-        subtext: "Data from www.census.gov",
-        sublink: "http://www.census.gov/popest/data/datasets.html",
+        text: "Train Passenger Frequency Map",
+        subtext:
+          "Visualisation of passenger demand throughout victoria" +
+            result.data._id || "Victoria",
+
         left: "right",
       },
       tooltip: {
@@ -61,8 +46,8 @@ const GeoChart = (usaJson) => {
       },
       visualMap: {
         left: "right",
-        min: 500000,
-        max: 38000000,
+        min: -30000,
+        max: 30000,
         inRange: {
           color: [
             "#313695",
@@ -78,7 +63,7 @@ const GeoChart = (usaJson) => {
             "#a50026",
           ],
         },
-        text: ["High", "Low"],
+        text: ["Going To", "Coming From"],
         calculable: true,
       },
       toolbox: {
@@ -93,68 +78,85 @@ const GeoChart = (usaJson) => {
       },
       series: [
         {
-          name: "USA PopEstimates",
+          name: "Victoria Train Demand",
           type: "map",
           roam: true,
-          map: "USA",
+          map: "Victoria",
           emphasis: {
             label: {
               show: true,
             },
           },
           data: [
-            { name: "Alabama", value: 4822023 },
-            { name: "Alaska", value: 731449 },
-            { name: "Arizona", value: 6553255 },
-            { name: "Arkansas", value: 2949131 },
-            { name: "California", value: 38041430 },
-            { name: "Colorado", value: 5187582 },
-            { name: "Connecticut", value: 3590347 },
-            { name: "Delaware", value: 917092 },
-            { name: "District of Columbia", value: 632323 },
-            { name: "Florida", value: 19317568 },
-            { name: "Georgia", value: 9919945 },
-            { name: "Hawaii", value: 1392313 },
-            { name: "Idaho", value: 1595728 },
-            { name: "Illinois", value: 12875255 },
-            { name: "Indiana", value: 6537334 },
-            { name: "Iowa", value: 3074186 },
-            { name: "Kansas", value: 2885905 },
-            { name: "Kentucky", value: 4380415 },
-            { name: "Louisiana", value: 4601893 },
-            { name: "Maine", value: 1329192 },
-            { name: "Maryland", value: 5884563 },
-            { name: "Massachusetts", value: 6646144 },
-            { name: "Michigan", value: 9883360 },
-            { name: "Minnesota", value: 5379139 },
-            { name: "Mississippi", value: 2984926 },
-            { name: "Missouri", value: 6021988 },
-            { name: "Montana", value: 1005141 },
-            { name: "Nebraska", value: 1855525 },
-            { name: "Nevada", value: 2758931 },
-            { name: "New Hampshire", value: 1320718 },
-            { name: "New Jersey", value: 8864590 },
-            { name: "New Mexico", value: 2085538 },
-            { name: "New York", value: 19570261 },
-            { name: "North Carolina", value: 9752073 },
-            { name: "North Dakota", value: 699628 },
-            { name: "Ohio", value: 11544225 },
-            { name: "Oklahoma", value: 3814820 },
-            { name: "Oregon", value: 3899353 },
-            { name: "Pennsylvania", value: 12763536 },
-            { name: "Rhode Island", value: 1050292 },
-            { name: "South Carolina", value: 4723723 },
-            { name: "South Dakota", value: 833354 },
-            { name: "Tennessee", value: 6456243 },
-            { name: "Texas", value: 26059203 },
-            { name: "Utah", value: 2855287 },
-            { name: "Vermont", value: 626011 },
-            { name: "Virginia", value: 8185867 },
-            { name: "Washington", value: 6897012 },
-            { name: "West Virginia", value: 1855413 },
-            { name: "Wisconsin", value: 5726398 },
-            { name: "Wyoming", value: 576412 },
-            { name: "Puerto Rico", value: 3667084 },
+            { name: "Melbourne", value: 25000 },
+            { name: "Murrindindi", value: -200 },
+            { name: "Baw Baw", value: -200 },
+            { name: "Port Phillip", value: 24000 },
+            { name: "Pyrenees", value: -200 },
+            { name: "Bass Coast", value: -200 },
+            { name: "Queenscliffe", value: -200 },
+            { name: "Wyndham", value: -200 },
+            { name: "Mansfield", value: -200 },
+            { name: "Swan Hill (RC)", value: -200 },
+            { name: "Moreland", value: 12000 },
+            { name: "Glen Eira", value: 13000 },
+            { name: "Surf Coast", value: -200 },
+            { name: "Glenelg", value: -200 },
+            { name: "Moonee Valley", value: 9000 },
+            { name: "Moyne", value: -200 },
+            { name: "Central Goldfields", value: -200 },
+            { name: "Casey", value: -200 },
+            { name: "Yarra Ranges", value: -2000 },
+            { name: "Mitchell", value: -200 },
+            { name: "Mildura (RC)", value: -200 },
+            { name: "Hobsons Bay", value: 500 },
+            { name: "Greater Bendigo", value: -200 },
+            { name: "Southern Grampians", value: -200 },
+            { name: "Horsham (RC)", value: -200 },
+            { name: "Buloke", value: -200 },
+            { name: "Brimbank", value: -200 },
+            { name: "Nillumbik", value: -200 },
+            { name: "Benalla (RC)", value: -200 },
+            { name: "Golden Plains", value: -200 },
+            { name: "Moorabool", value: -200 },
+            { name: "Colac-Otway", value: -200 },
+            { name: "Stonnington", value: 18000 },
+            { name: "Indigo", value: -200 },
+            { name: "West Wimmera", value: -200 },
+            { name: "Ballarat", value: -200 },
+            { name: "Greater Geelong", value: -200 },
+            { name: "Alpine", value: -200 },
+            { name: "Boroondara", value: 18000 },
+            { name: "East Gippsland", value: -200 },
+            { name: "Mornington Peninsula", value: -200 },
+            { name: "Darebin", value: 16000 },
+            { name: "Campaspe", value: -200 },
+            { name: "Mount Alexander", value: -200 },
+            { name: "Corangamite", value: -200 },
+            { name: "Northern Grampians", value: -200 },
+            { name: "Maribyrnong", value: 5000 },
+            { name: "Frankston", value: -200 },
+            { name: "Whitehorse", value: -30000 },
+            { name: "Melton", value: -200 },
+            { name: "Gannawarra", value: -200 },
+            { name: "Strathbogie", value: -200 },
+            { name: "Knox", value: -2000 },
+            { name: "Loddon", value: -200 },
+            { name: "Yarriambiack", value: -200 },
+            { name: "Whittlesea", value: -200 },
+            { name: "Wangaratta (RC)", value: -200 },
+            { name: "Yarra", value: 24000 },
+            { name: "Banyule", value: 12000 },
+            { name: "Bayside", value: 13000 },
+            { name: "Monash", value: 5000 },
+            { name: "Hume", value: -200 },
+            { name: "Manningham", value: -4000 },
+            { name: "Kingston (C) (Vic.)", value: -300 },
+            { name: "Greater Dandenong", value: -200 },
+            { name: "Cardinia", value: -200 },
+            { name: "Maroondah", value: -3000 },
+            { name: "Macedon Ranges", value: -200 },
+            { name: "Hepburn", value: -200 },
           ],
         },
       ],
@@ -162,7 +164,7 @@ const GeoChart = (usaJson) => {
 
     setOption(geoChartOptions);
   }, []);
-  return <ReactECharts option={option} />;
+  return <ReactECharts option={option} style={{ height: "100vh" }} />;
 };
 
 export default GeoChart;
