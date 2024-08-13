@@ -1,7 +1,7 @@
 // pages/index.js
 import { MongoClient } from "mongodb";
 import GeoChart from "../components/GeoChart";
-import FileUploader from "@/components/FileUploader";
+import FileUploader from "@/components/FileUploader.jsx";
 const uri =
   "mongodb+srv://tomsshanley:6RJlsV6P3AUI0ano@cluster5.oxoiyna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster5";
 const client = new MongoClient(uri);
@@ -94,12 +94,12 @@ export default function Home({ vicJSONresult, error }: HomeProps) {
   return (
     <div>
       <h1>Upload CSV File</h1>
-      <FileUploader />
+      <FileUploader geoJSONdata={vicJSONresult} />
       <h3>Select LGA:</h3>
       <select id="lgaDropdown"></select>
       <div id="flowmap"></div>
 
-      <GeoChart data={vicJSONresult} className="h-[80vh]"></GeoChart>
+      {/* <GeoChart data={vicJSONresult} className="h-[80vh]"></GeoChart> */}
       {/* <p>{JSON.stringify(vicJSONresult)}</p> */}
     </div>
   );
