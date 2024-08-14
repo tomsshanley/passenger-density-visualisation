@@ -1,7 +1,10 @@
 // pages/index.js
 import { MongoClient } from "mongodb";
-import GeoChart from "../components/GeoChart";
+// import GeoChart from "../components/GeoChart";
 import FileUploader from "@/components/FileUploader.jsx";
+import Dynamic from "@/components/Dynamic";
+import TimelineExample from "@/components/TimelineExample";
+import Echart from "@/components/Echart";
 const uri =
   "mongodb+srv://tomsshanley:6RJlsV6P3AUI0ano@cluster5.oxoiyna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster5";
 const client = new MongoClient(uri);
@@ -84,21 +87,87 @@ type HomeProps = {
   vicJSONresult?: Geojson;
   error?: string;
 };
-
-export default function Home({ vicJSONresult, error }: HomeProps) {
+export default function Home({ geoJSONdata, error }: HomeProps) {
   // export default function Home({ result, vicJSONresult, error }) {
   if (error) {
     return <div>Error: {error}</div>;
   }
+  let passengerData: any = [
+    {
+      "00:00": [
+        {
+          name: "Frankston",
+          value: 1,
+        },
+      ],
+    },
+    {
+      "01:00": [],
+    },
+    {
+      "02:00": [],
+    },
+    {
+      "03:00": [],
+    },
+    {
+      "04:00": [],
+    },
+    {
+      "05:00": [],
+    },
+    {
+      "06:00": [
+        {
+          name: "Melbourne City",
+          value: 2,
+        },
+        {
+          name: "Maribyrnong",
+          value: 1,
+        },
+      ],
+    },
+    {
+      "07:00": [
+        {
+          name: "Darebin - South",
+          value: 1,
+        },
+        {
+          name: "Melbourne City",
+          value: 4,
+        },
+        {
+          name: "Tullamarine - Broadmeadows",
+          value: 1,
+        },
+        {
+          name: "Brunswick - Coburg",
+          value: 1,
+        },
+        {
+          name: "Maribyrnong",
+          value: 1,
+        },
+        {
+          name: "Boroondara",
+          value: 1,
+        },
+      ],
+    },
+  ];
 
   return (
     <div>
-      <h1>Upload CSV File</h1>
-      <FileUploader geoJSONdata={vicJSONresult} />
+      {/* <TimelineExample /> */}
+      <Echart geoJSONdata={geoJSONdata} passengerData={passengerData} />
+      {/* <h1>Upload CSV File</h1>
+      <FileUploader data={vicJSONresult} />
       <h3>Select LGA:</h3>
       <select id="lgaDropdown"></select>
       <div id="flowmap"></div>
-
+      <Dynamic /> */}
       {/* <GeoChart data={vicJSONresult} className="h-[80vh]"></GeoChart> */}
       {/* <p>{JSON.stringify(vicJSONresult)}</p> */}
     </div>

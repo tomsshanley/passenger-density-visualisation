@@ -1,0 +1,837 @@
+[
+  {
+    "00:00": [
+      {
+        "name": "Frankston",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "01:00": []
+  },
+  {
+    "02:00": []
+  },
+  {
+    "03:00": []
+  },
+  {
+    "04:00": []
+  },
+  {
+    "05:00": []
+  },
+  {
+    "06:00": [
+      {
+        "name": "Melbourne City",
+        "value": 2
+      },
+      {
+        "name": "Maribyrnong",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "07:00": [
+      {
+        "name": "Darebin - South",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 4
+      },
+      {
+        "name": "Tullamarine - Broadmeadows",
+        "value": 1
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 1
+      },
+      {
+        "name": "Maribyrnong",
+        "value": 1
+      },
+      {
+        "name": "Boroondara",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "08:00": [
+      {
+        "name": "Melbourne City",
+        "value": 11
+      },
+      {
+        "name": "Stonnington - East",
+        "value": 1
+      },
+      {
+        "name": "Banyule",
+        "value": 1
+      },
+      {
+        "name": "Whitehorse - East",
+        "value": 1
+      },
+      {
+        "name": "Monash",
+        "value": 1
+      },
+      {
+        "name": "Yarra",
+        "value": 2
+      },
+      {
+        "name": "Glen Eira",
+        "value": 1
+      },
+      {
+        "name": "Wyndham",
+        "value": 1
+      },
+      {
+        "name": "Stonnington - West",
+        "value": 1
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 1
+      },
+      {
+        "name": "Brimbank",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "09:00": [
+      {
+        "name": "Brunswick - Coburg",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 2
+      },
+      {
+        "name": "Yarra",
+        "value": 3
+      },
+      {
+        "name": "Darebin - South",
+        "value": 1
+      },
+      {
+        "name": "Monash",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "10:00": [
+      {
+        "name": "Maribyrnong",
+        "value": 1
+      },
+      {
+        "name": "Stonnington - West",
+        "value": 2
+      },
+      {
+        "name": "Melbourne City",
+        "value": 1
+      },
+      {
+        "name": "Yarra",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "11:00": [
+      {
+        "name": "Melbourne City",
+        "value": 4
+      },
+      {
+        "name": "Banyule",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "12:00": [
+      {
+        "name": "Banyule",
+        "value": 2
+      },
+      {
+        "name": "Melbourne City",
+        "value": 4
+      },
+      {
+        "name": "Maribyrnong",
+        "value": 1
+      },
+      {
+        "name": "Tullamarine - Broadmeadows",
+        "value": 1
+      },
+      {
+        "name": "Monash",
+        "value": 1
+      },
+      {
+        "name": "Glen Eira",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "13:00": [
+      {
+        "name": "Boroondara",
+        "value": 3
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 2
+      },
+      {
+        "name": "Melbourne City",
+        "value": 1
+      },
+      {
+        "name": "Essendon",
+        "value": 1
+      },
+      {
+        "name": "Melton - Bacchus Marsh",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "14:00": [
+      {
+        "name": "Monash",
+        "value": 1
+      },
+      {
+        "name": "Boroondara",
+        "value": 3
+      },
+      {
+        "name": "Darebin - South",
+        "value": 1
+      },
+      {
+        "name": "Glen Eira",
+        "value": 2
+      },
+      {
+        "name": "Kingston",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 4
+      },
+      {
+        "name": "Darebin - North",
+        "value": 1
+      },
+      {
+        "name": "Dandenong",
+        "value": 1
+      },
+      {
+        "name": "Stonnington - East",
+        "value": 2
+      },
+      {
+        "name": "Frankston",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "15:00": [
+      {
+        "name": "Glen Eira",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 4
+      },
+      {
+        "name": "Yarra",
+        "value": 4
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 1
+      },
+      {
+        "name": "Whitehorse - West",
+        "value": 1
+      },
+      {
+        "name": "Boroondara",
+        "value": 2
+      },
+      {
+        "name": "Kingston",
+        "value": 2
+      },
+      {
+        "name": "Monash",
+        "value": 3
+      },
+      {
+        "name": "Stonnington - West",
+        "value": 1
+      },
+      {
+        "name": "Banyule",
+        "value": 2
+      },
+      {
+        "name": "Maroondah",
+        "value": 1
+      },
+      {
+        "name": "Yarra Ranges",
+        "value": 1
+      },
+      {
+        "name": "Hobsons Bay",
+        "value": 1
+      },
+      {
+        "name": "Essendon",
+        "value": 1
+      },
+      {
+        "name": "Brimbank",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "16:00": [
+      {
+        "name": "Melbourne City",
+        "value": 7
+      },
+      {
+        "name": "Macedon Ranges",
+        "value": 1
+      },
+      {
+        "name": "Monash",
+        "value": 2
+      },
+      {
+        "name": "Yarra",
+        "value": 4
+      },
+      {
+        "name": "Wyndham",
+        "value": 1
+      },
+      {
+        "name": "Glen Eira",
+        "value": 4
+      },
+      {
+        "name": "Bayside",
+        "value": 4
+      },
+      {
+        "name": "Darebin - South",
+        "value": 1
+      },
+      {
+        "name": "Port Phillip",
+        "value": 1
+      },
+      {
+        "name": "Whittlesea - Wallan",
+        "value": 3
+      },
+      {
+        "name": "Boroondara",
+        "value": 6
+      },
+      {
+        "name": "Whitehorse - East",
+        "value": 1
+      },
+      {
+        "name": "Moreland - North",
+        "value": 1
+      },
+      {
+        "name": "Maroondah",
+        "value": 2
+      },
+      {
+        "name": "Yarra Ranges",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "17:00": [
+      {
+        "name": "Wyndham",
+        "value": 3
+      },
+      {
+        "name": "Yarra",
+        "value": 4
+      },
+      {
+        "name": "Stonnington - West",
+        "value": 1
+      },
+      {
+        "name": "Essendon",
+        "value": 8
+      },
+      {
+        "name": "Whitehorse - West",
+        "value": 4
+      },
+      {
+        "name": "Yarra Ranges",
+        "value": 3
+      },
+      {
+        "name": "Frankston",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 11
+      },
+      {
+        "name": "Boroondara",
+        "value": 7
+      },
+      {
+        "name": "Whitehorse - East",
+        "value": 3
+      },
+      {
+        "name": "Brimbank",
+        "value": 3
+      },
+      {
+        "name": "Darebin - North",
+        "value": 3
+      },
+      {
+        "name": "Maribyrnong",
+        "value": 3
+      },
+      {
+        "name": "Monash",
+        "value": 8
+      },
+      {
+        "name": "Darebin - South",
+        "value": 6
+      },
+      {
+        "name": "Port Phillip",
+        "value": 2
+      },
+      {
+        "name": "Stonnington - East",
+        "value": 2
+      },
+      {
+        "name": "Moreland - North",
+        "value": 2
+      },
+      {
+        "name": "Melton - Bacchus Marsh",
+        "value": 2
+      },
+      {
+        "name": "Geelong",
+        "value": 1
+      },
+      {
+        "name": "Macedon Ranges",
+        "value": 1
+      },
+      {
+        "name": "Casey - North",
+        "value": 3
+      },
+      {
+        "name": "Hobsons Bay",
+        "value": 6
+      },
+      {
+        "name": "Bayside",
+        "value": 5
+      },
+      {
+        "name": "Kingston",
+        "value": 1
+      },
+      {
+        "name": "Banyule",
+        "value": 5
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 1
+      },
+      {
+        "name": "Glen Eira",
+        "value": 4
+      },
+      {
+        "name": "Maroondah",
+        "value": 3
+      },
+      {
+        "name": "Dandenong",
+        "value": 2
+      },
+      {
+        "name": "Casey - South",
+        "value": 1
+      },
+      {
+        "name": "Tullamarine - Broadmeadows",
+        "value": 1
+      },
+      {
+        "name": "Nillumbik - Kinglake",
+        "value": 1
+      },
+      {
+        "name": "Sunbury",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "18:00": [
+      {
+        "name": "Melbourne City",
+        "value": 15
+      },
+      {
+        "name": "Monash",
+        "value": 4
+      },
+      {
+        "name": "Maribyrnong",
+        "value": 5
+      },
+      {
+        "name": "Glen Eira",
+        "value": 10
+      },
+      {
+        "name": "Stonnington - West",
+        "value": 4
+      },
+      {
+        "name": "Bayside",
+        "value": 2
+      },
+      {
+        "name": "Wyndham",
+        "value": 5
+      },
+      {
+        "name": "Whitehorse - East",
+        "value": 2
+      },
+      {
+        "name": "Yarra",
+        "value": 2
+      },
+      {
+        "name": "Banyule",
+        "value": 5
+      },
+      {
+        "name": "Maroondah",
+        "value": 3
+      },
+      {
+        "name": "Hobsons Bay",
+        "value": 4
+      },
+      {
+        "name": "Nillumbik - Kinglake",
+        "value": 2
+      },
+      {
+        "name": "Frankston",
+        "value": 2
+      },
+      {
+        "name": "Brimbank",
+        "value": 6
+      },
+      {
+        "name": "Casey - South",
+        "value": 2
+      },
+      {
+        "name": "Moreland - North",
+        "value": 2
+      },
+      {
+        "name": "Tullamarine - Broadmeadows",
+        "value": 4
+      },
+      {
+        "name": "Dandenong",
+        "value": 2
+      },
+      {
+        "name": "Kingston",
+        "value": 5
+      },
+      {
+        "name": "Stonnington - East",
+        "value": 5
+      },
+      {
+        "name": "Boroondara",
+        "value": 4
+      },
+      {
+        "name": "Macedon Ranges",
+        "value": 3
+      },
+      {
+        "name": "Knox",
+        "value": 1
+      },
+      {
+        "name": "Essendon",
+        "value": 6
+      },
+      {
+        "name": "Whittlesea - Wallan",
+        "value": 3
+      },
+      {
+        "name": "Sunbury",
+        "value": 2
+      },
+      {
+        "name": "Yarra Ranges",
+        "value": 1
+      },
+      {
+        "name": "Cardinia",
+        "value": 2
+      },
+      {
+        "name": "Casey - North",
+        "value": 1
+      },
+      {
+        "name": "Whitehorse - West",
+        "value": 2
+      },
+      {
+        "name": "Geelong",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "19:00": [
+      {
+        "name": "Hobsons Bay",
+        "value": 3
+      },
+      {
+        "name": "Geelong",
+        "value": 2
+      },
+      {
+        "name": "Moreland - North",
+        "value": 2
+      },
+      {
+        "name": "Bayside",
+        "value": 3
+      },
+      {
+        "name": "Monash",
+        "value": 2
+      },
+      {
+        "name": "Melbourne City",
+        "value": 4
+      },
+      {
+        "name": "Stonnington - East",
+        "value": 3
+      },
+      {
+        "name": "Brimbank",
+        "value": 1
+      },
+      {
+        "name": "Maribyrnong",
+        "value": 2
+      },
+      {
+        "name": "Whitehorse - West",
+        "value": 2
+      },
+      {
+        "name": "Glen Eira",
+        "value": 2
+      },
+      {
+        "name": "Sunbury",
+        "value": 2
+      },
+      {
+        "name": "Cardinia",
+        "value": 2
+      },
+      {
+        "name": "Whittlesea - Wallan",
+        "value": 1
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 2
+      },
+      {
+        "name": "Yarra",
+        "value": 1
+      },
+      {
+        "name": "Knox",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "20:00": [
+      {
+        "name": "Boroondara",
+        "value": 1
+      },
+      {
+        "name": "Stonnington - West",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 1
+      },
+      {
+        "name": "Casey - North",
+        "value": 1
+      },
+      {
+        "name": "Cardinia",
+        "value": 1
+      },
+      {
+        "name": "Hobsons Bay",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "21:00": [
+      {
+        "name": "Boroondara",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 2
+      },
+      {
+        "name": "Bayside",
+        "value": 1
+      },
+      {
+        "name": "Glen Eira",
+        "value": 1
+      },
+      {
+        "name": "Brimbank",
+        "value": 2
+      },
+      {
+        "name": "Hobsons Bay",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "22:00": [
+      {
+        "name": "Darebin - South",
+        "value": 1
+      },
+      {
+        "name": "Melbourne City",
+        "value": 3
+      },
+      {
+        "name": "Boroondara",
+        "value": 1
+      },
+      {
+        "name": "Wyndham",
+        "value": 1
+      },
+      {
+        "name": "Brunswick - Coburg",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "23:00": [
+      {
+        "name": "Geelong",
+        "value": 1
+      },
+      {
+        "name": "Gippsland - East",
+        "value": 1
+      },
+      {
+        "name": "Whittlesea - Wallan",
+        "value": 1
+      },
+      {
+        "name": "Bayside",
+        "value": 1
+      }
+    ]
+  }
+]
