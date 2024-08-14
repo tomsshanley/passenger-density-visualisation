@@ -5,6 +5,8 @@ import FileUploader from "@/components/FileUploader.jsx";
 import Dynamic from "@/components/Dynamic";
 import TimelineExample from "@/components/TimelineExample";
 import Echart from "@/components/Echart";
+import EchartsMap from "@/components/EchartsMap";
+
 const uri =
   "mongodb+srv://tomsshanley:6RJlsV6P3AUI0ano@cluster5.oxoiyna.mongodb.net/?retryWrites=true&w=majority&appName=Cluster5";
 const client = new MongoClient(uri);
@@ -71,7 +73,7 @@ export const getServerSideProps = async () => {
     // console.log("VicResult", updatedGeojsonData);
 
     return {
-      props: { vicJSONresult: updatedGeojsonData },
+      props: { geoJSONdata: updatedGeojsonData },
       // props: { result: result[0], vicJSONresult: updatedGeojsonData },
     };
   } catch (error) {
@@ -84,7 +86,7 @@ export const getServerSideProps = async () => {
 };
 
 type HomeProps = {
-  vicJSONresult?: Geojson;
+  geoJSONdata?: Geojson;
   error?: string;
 };
 export default function Home({ geoJSONdata, error }: HomeProps) {
@@ -161,13 +163,14 @@ export default function Home({ geoJSONdata, error }: HomeProps) {
   return (
     <div>
       {/* <TimelineExample /> */}
-      <Echart geoJSONdata={geoJSONdata} passengerData={passengerData} />
       {/* <h1>Upload CSV File</h1>
+      <EchartsMap />
       <FileUploader data={vicJSONresult} />
       <h3>Select LGA:</h3>
       <select id="lgaDropdown"></select>
       <div id="flowmap"></div>
       <Dynamic /> */}
+      <Echart geoJSONdata={geoJSONdata} passengerData={passengerData} />
       {/* <GeoChart data={vicJSONresult} className="h-[80vh]"></GeoChart> */}
       {/* <p>{JSON.stringify(vicJSONresult)}</p> */}
     </div>

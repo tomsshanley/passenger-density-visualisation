@@ -7,6 +7,7 @@ import {
   TooltipComponent,
   VisualMapComponent,
   GeoComponent,
+  GridComponent,
 } from "echarts/components";
 import { MapChart } from "echarts/charts";
 import { CanvasRenderer } from "echarts/renderers";
@@ -20,6 +21,7 @@ echarts.use([
   GeoComponent,
   MapChart,
   CanvasRenderer,
+  GridComponent,
 ]);
 
 const PassengerDataVisualisation = (props) => {
@@ -27,8 +29,8 @@ const PassengerDataVisualisation = (props) => {
     const chartDom = document.getElementById("main");
     const myChart = echarts.init(chartDom);
     console.log(props);
-
-    // echarts.registerMap("Victoria", props.geoJSONdata);
+    console.log(props.geoJSONdata);
+    echarts.registerMap("Victoria", props.geoJSONdata);
     const option = {
       baseOption: {
         timeline: {
@@ -37,13 +39,13 @@ const PassengerDataVisualisation = (props) => {
           playInterval: 1000,
           data: [
             "00:00",
-            "01:00",
-            "02:00",
-            "03:00",
-            "04:00",
-            "05:00",
-            "06:00",
-            "07:00",
+            // "01:00",
+            // "02:00",
+            // "03:00",
+            // "04:00",
+            // "05:00",
+            // "06:00",
+            // "07:00",
           ],
         },
         title: {
@@ -71,62 +73,62 @@ const PassengerDataVisualisation = (props) => {
             },
           ],
         },
-        {
-          title: { text: "Time: 01:00" },
-          series: [
-            {
-              data: props.passengerData[1],
-            },
-          ],
-        },
-        {
-          title: { text: "Time: 02:00" },
-          series: [
-            {
-              data: props.passengerData[2],
-            },
-          ],
-        },
-        {
-          title: { text: "Time: 03:00" },
-          series: [
-            {
-              data: props.passengerData[3],
-            },
-          ],
-        },
-        {
-          title: { text: "Time: 04:00" },
-          series: [
-            {
-              data: props.passengerData[4],
-            },
-          ],
-        },
-        {
-          title: { text: "Time: 05:00" },
-          series: [
-            {
-              data: props.passengerData[5],
-            },
-          ],
-        },
-        {
-          title: { text: "Time: 06:00" },
-          series: [
-            {
-              data: props.passengerData[6],
-            },
-          ],
-        },
-        {
-          title: { text: "Time: 07:00" },
-          series: [
-            {
-              data: props.passengerData[7],
-            },
-          ],
-        },
+        // {
+        //   title: { text: "Time: 01:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[1],
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: { text: "Time: 02:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[2],
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: { text: "Time: 03:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[3],
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: { text: "Time: 04:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[4],
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: { text: "Time: 05:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[5],
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: { text: "Time: 06:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[6],
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: { text: "Time: 07:00" },
+        //   series: [
+        //     {
+        //       data: props.passengerData[7],
+        //     },
+        //   ],
+        // },
       ],
     };
 
